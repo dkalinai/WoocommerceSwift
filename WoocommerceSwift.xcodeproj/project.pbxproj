@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2A7635A81DE96FD400465BF0 /* WoocommerceSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7635A61DE96FD400465BF0 /* WoocommerceSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A7635AF1DE970C900465BF0 /* WooAuthenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7635AE1DE970C900465BF0 /* WooAuthenticate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A7635A31DE96FD400465BF0 /* WoocommerceSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WoocommerceSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7635A61DE96FD400465BF0 /* WoocommerceSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WoocommerceSwift.h; sourceTree = "<group>"; };
 		2A7635A71DE96FD400465BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7635AE1DE970C900465BF0 /* WooAuthenticate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WooAuthenticate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				2A7635A61DE96FD400465BF0 /* WoocommerceSwift.h */,
 				2A7635A71DE96FD400465BF0 /* Info.plist */,
+				2A7635AE1DE970C900465BF0 /* WooAuthenticate.swift */,
 			);
 			path = WoocommerceSwift;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					2A7635A21DE96FD400465BF0 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = A766W2GNUA;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7635AF1DE970C900465BF0 /* WooAuthenticate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +242,7 @@
 		2A7635AC1DE96FD400465BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -251,6 +257,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dkalinai.WoocommerceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -258,6 +265,7 @@
 		2A7635AD1DE96FD400465BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -295,6 +303,7 @@
 				2A7635AD1DE96FD400465BF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
